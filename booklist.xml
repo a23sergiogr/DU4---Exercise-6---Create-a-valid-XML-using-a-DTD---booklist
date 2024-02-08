@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE booklist [
+    <!ELEMENT booklist (book)+>
+    <!ELEMENT book (bookname*,author+,price?,homepage)>
+    <!ELEMENT bookname (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT homepage (#PCDATA)>
+]>
+
+<booklist>
+    <book>
+        <bookname>XML in a Nutshell</bookname>
+        <author>Elliotte Rusty Harold</author>
+        <author>W. Scott Means</author>
+        <price>44.95</price>
+        <homepage>http://www.cafeconleche.org/books/xian/</homepage>
+    </book>
+    <book>
+        <bookname>Java and XML</bookname>
+        <author>Brett McLaughlin</author>
+        <price>39.95</price>
+        <homepage>http://www.oreilly.com/catalog/javaxml/</homepage>
+    </book>
+    <book>
+        <bookname>Java and XML, 2nd Edition</bookname>
+        <author>Brett McLaughlin</author>
+        <author>Justin Edelson</author>
+        <price>49.95</price>
+        <homepage>http://www.oreilly.com/catalog/javaxml2/</homepage>
+    </book>
+</booklist>
